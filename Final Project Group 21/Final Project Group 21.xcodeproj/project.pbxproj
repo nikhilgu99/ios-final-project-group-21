@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0097E73C2CF777990025BD85 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0097E73B2CF777990025BD85 /* MainScreenView.swift */; };
 		314F59D52CE2A31300D54B4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314F59D42CE2A31300D54B4F /* AppDelegate.swift */; };
 		314F59D72CE2A31300D54B4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314F59D62CE2A31300D54B4F /* SceneDelegate.swift */; };
 		314F59D92CE2A31300D54B4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314F59D82CE2A31300D54B4F /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0097E73B2CF777990025BD85 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		314F59D12CE2A31300D54B4F /* Final Project Group 21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project Group 21.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		314F59D42CE2A31300D54B4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		314F59D62CE2A31300D54B4F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0097E7342CF7760C0025BD85 /* Main Screen */ = {
+			isa = PBXGroup;
+			children = (
+				314F59D82CE2A31300D54B4F /* ViewController.swift */,
+				0097E73B2CF777990025BD85 /* MainScreenView.swift */,
+			);
+			path = "Main Screen";
+			sourceTree = "<group>";
+		};
+		0097E7352CF7765E0025BD85 /* Create New Workout Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Create New Workout Screen";
+			sourceTree = "<group>";
+		};
+		0097E7362CF7766E0025BD85 /* Add Excercise Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Add Excercise Screen";
+			sourceTree = "<group>";
+		};
+		0097E7372CF776AD0025BD85 /* Do A Workout Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Do A Workout Screen";
+			sourceTree = "<group>";
+		};
+		0097E7382CF776D80025BD85 /* Profile Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Profile Screen";
+			sourceTree = "<group>";
+		};
+		0097E7392CF776F30025BD85 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		0097E73A2CF777190025BD85 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
 		314F59C82CE2A31300D54B4F = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +117,16 @@
 		314F59D32CE2A31300D54B4F /* Final Project Group 21 */ = {
 			isa = PBXGroup;
 			children = (
+				0097E73A2CF777190025BD85 /* Data Models */,
+				0097E7392CF776F30025BD85 /* Login Screen */,
+				0097E7382CF776D80025BD85 /* Profile Screen */,
+				0097E7372CF776AD0025BD85 /* Do A Workout Screen */,
+				0097E7362CF7766E0025BD85 /* Add Excercise Screen */,
+				0097E7352CF7765E0025BD85 /* Create New Workout Screen */,
+				0097E7342CF7760C0025BD85 /* Main Screen */,
 				31556EB42CF5257A007346EB /* GoogleService-Info.plist */,
 				314F59D42CE2A31300D54B4F /* AppDelegate.swift */,
 				314F59D62CE2A31300D54B4F /* SceneDelegate.swift */,
-				314F59D82CE2A31300D54B4F /* ViewController.swift */,
 				314F59DA2CE2A31300D54B4F /* Main.storyboard */,
 				314F59DD2CE2A31500D54B4F /* Assets.xcassets */,
 				314F59DF2CE2A31500D54B4F /* LaunchScreen.storyboard */,
@@ -158,6 +217,7 @@
 				314F59D92CE2A31300D54B4F /* ViewController.swift in Sources */,
 				314F59D52CE2A31300D54B4F /* AppDelegate.swift in Sources */,
 				314F59D72CE2A31300D54B4F /* SceneDelegate.swift in Sources */,
+				0097E73C2CF777990025BD85 /* MainScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
