@@ -43,11 +43,11 @@ class ViewController: UIViewController {
     
     @objc func onButtonAddWorkoutTapped() {
         //todo launch add workout screen from here
+        let addWorkoutController = AddWorkoutViewController()
+        addWorkoutController.workout = nil
+        self.navigationController?.pushViewController(addWorkoutController, animated: true)
     }
     
-    
-
-
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{

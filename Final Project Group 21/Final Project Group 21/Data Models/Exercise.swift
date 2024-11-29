@@ -8,16 +8,18 @@
 import Foundation
 
 
-struct Excercise: Codable {
+struct Exercise: Codable {
     
     var name: String
     var sets: Int
     var reps: Int
+    var rest: Int
     
-    init(name: String, sets: Int, reps: Int) {
+    init(name: String, sets: Int, reps: Int, rest: Int) {
         self.name = name
         self.sets = sets
         self.reps = reps
+        self.rest = rest
     }
     
 }

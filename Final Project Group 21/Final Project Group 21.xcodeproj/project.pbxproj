@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		003D80532CFA6ADB0030DFFF /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D80522CFA6ADB0030DFFF /* AddWorkoutView.swift */; };
+		003D80552CFA6AE70030DFFF /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D80542CFA6AE70030DFFF /* AddWorkoutViewController.swift */; };
+		003D80572CFA6D510030DFFF /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D80562CFA6D510030DFFF /* Exercise.swift */; };
+		003D805A2CFA6FD50030DFFF /* ExercisesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003D80592CFA6FD50030DFFF /* ExercisesTableViewCell.swift */; };
 		008EA3372CF8F88E00B18BEA /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EA3362CF8F88E00B18BEA /* Workout.swift */; };
-		008EA3392CF8F89A00B18BEA /* Excercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EA3382CF8F89A00B18BEA /* Excercise.swift */; };
 		008EA33B2CF8FA2900B18BEA /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EA33A2CF8FA2900B18BEA /* Configs.swift */; };
 		008EA33D2CF8FB1E00B18BEA /* WorkoutsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EA33C2CF8FB1E00B18BEA /* WorkoutsTableViewCell.swift */; };
 		0097E73C2CF777990025BD85 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0097E73B2CF777990025BD85 /* MainScreenView.swift */; };
@@ -25,8 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003D80522CFA6ADB0030DFFF /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		003D80542CFA6AE70030DFFF /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
+		003D80562CFA6D510030DFFF /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		003D80592CFA6FD50030DFFF /* ExercisesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesTableViewCell.swift; sourceTree = "<group>"; };
 		008EA3362CF8F88E00B18BEA /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
-		008EA3382CF8F89A00B18BEA /* Excercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Excercise.swift; sourceTree = "<group>"; };
 		008EA33A2CF8FA2900B18BEA /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 		008EA33C2CF8FB1E00B18BEA /* WorkoutsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsTableViewCell.swift; sourceTree = "<group>"; };
 		0097E73B2CF777990025BD85 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
@@ -55,6 +61,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		003D80582CFA6D630030DFFF /* Add Exercise Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Add Exercise Screen";
+			sourceTree = "<group>";
+		};
 		0097E7342CF7760C0025BD85 /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +81,11 @@
 		0097E7352CF7765E0025BD85 /* Create New Workout Screen */ = {
 			isa = PBXGroup;
 			children = (
+				003D80522CFA6ADB0030DFFF /* AddWorkoutView.swift */,
+				003D80542CFA6AE70030DFFF /* AddWorkoutViewController.swift */,
+				003D80592CFA6FD50030DFFF /* ExercisesTableViewCell.swift */,
 			);
 			path = "Create New Workout Screen";
-			sourceTree = "<group>";
-		};
-		0097E7362CF7766E0025BD85 /* Add Excercise Screen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Add Excercise Screen";
 			sourceTree = "<group>";
 		};
 		0097E7372CF776AD0025BD85 /* Do A Workout Screen */ = {
@@ -104,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				008EA3362CF8F88E00B18BEA /* Workout.swift */,
-				008EA3382CF8F89A00B18BEA /* Excercise.swift */,
+				003D80562CFA6D510030DFFF /* Exercise.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -128,11 +137,11 @@
 		314F59D32CE2A31300D54B4F /* Final Project Group 21 */ = {
 			isa = PBXGroup;
 			children = (
+				003D80582CFA6D630030DFFF /* Add Exercise Screen */,
 				0097E73A2CF777190025BD85 /* Data Models */,
 				0097E7392CF776F30025BD85 /* Login Screen */,
 				0097E7382CF776D80025BD85 /* Profile Screen */,
 				0097E7372CF776AD0025BD85 /* Do A Workout Screen */,
-				0097E7362CF7766E0025BD85 /* Add Excercise Screen */,
 				0097E7352CF7765E0025BD85 /* Create New Workout Screen */,
 				0097E7342CF7760C0025BD85 /* Main Screen */,
 				31556EB42CF5257A007346EB /* GoogleService-Info.plist */,
@@ -227,12 +236,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				314F59D92CE2A31300D54B4F /* ViewController.swift in Sources */,
-				008EA3392CF8F89A00B18BEA /* Excercise.swift in Sources */,
 				314F59D52CE2A31300D54B4F /* AppDelegate.swift in Sources */,
 				314F59D72CE2A31300D54B4F /* SceneDelegate.swift in Sources */,
+				003D80532CFA6ADB0030DFFF /* AddWorkoutView.swift in Sources */,
 				008EA3372CF8F88E00B18BEA /* Workout.swift in Sources */,
+				003D80572CFA6D510030DFFF /* Exercise.swift in Sources */,
 				0097E73C2CF777990025BD85 /* MainScreenView.swift in Sources */,
+				003D805A2CFA6FD50030DFFF /* ExercisesTableViewCell.swift in Sources */,
 				008EA33B2CF8FA2900B18BEA /* Configs.swift in Sources */,
+				003D80552CFA6AE70030DFFF /* AddWorkoutViewController.swift in Sources */,
 				008EA33D2CF8FB1E00B18BEA /* WorkoutsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

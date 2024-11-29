@@ -10,11 +10,13 @@ import Foundation
 struct Workout: Codable {
     
     var name: String
-    var excercises: [Excercise]
+    var exerciseInterval: Int
+    var exercises: [Exercise]
     
-    init(name: String, excercises: [Excercise]) {
+    init(name: String, exerciseInterval: Int, exercises: [Exercise]) {
         self.name = name
-        self.excercises = excercises
+        self.exerciseInterval = exerciseInterval
+        self.exercises = exercises
     }
     
 }
