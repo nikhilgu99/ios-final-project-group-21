@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		31AD25CF2CF51FDA009F5371 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25CE2CF51FDA009F5371 /* FirebaseAuth */; };
 		31AD25D12CF51FDA009F5371 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25D02CF51FDA009F5371 /* FirebaseFirestore */; };
 		31AD25D32CF51FDA009F5371 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25D22CF51FDA009F5371 /* FirebaseFirestoreSwift */; };
+		570B956B2CFE506500D134B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570B956A2CFE506000D134B0 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,13 @@
 		314F59E02CE2A31500D54B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		314F59E22CE2A31500D54B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31556EB42CF5257A007346EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		570B956A2CFE506000D134B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		570B955C2CFE478D00D134B0 /* Login Screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Login Screen"; sourceTree = "<group>"; };
+		570B955D2CFE479B00D134B0 /* Register Screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Register Screen"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		314F59CE2CE2A31300D54B4F /* Frameworks */ = {
@@ -61,13 +68,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		003D80582CFA6D630030DFFF /* Add Exercise Screen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Add Exercise Screen";
-			sourceTree = "<group>";
-		};
 		0097E7342CF7760C0025BD85 /* Main Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,30 +88,10 @@
 			path = "Create New Workout Screen";
 			sourceTree = "<group>";
 		};
-		0097E7372CF776AD0025BD85 /* Do A Workout Screen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Do A Workout Screen";
-			sourceTree = "<group>";
-		};
-		0097E7382CF776D80025BD85 /* Profile Screen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Profile Screen";
-			sourceTree = "<group>";
-		};
-		0097E7392CF776F30025BD85 /* Login Screen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Login Screen";
-			sourceTree = "<group>";
-		};
 		0097E73A2CF777190025BD85 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				570B956A2CFE506000D134B0 /* User.swift */,
 				008EA3362CF8F88E00B18BEA /* Workout.swift */,
 				003D80562CFA6D510030DFFF /* Exercise.swift */,
 			);
@@ -137,11 +117,9 @@
 		314F59D32CE2A31300D54B4F /* Final Project Group 21 */ = {
 			isa = PBXGroup;
 			children = (
-				003D80582CFA6D630030DFFF /* Add Exercise Screen */,
+				570B955D2CFE479B00D134B0 /* Register Screen */,
+				570B955C2CFE478D00D134B0 /* Login Screen */,
 				0097E73A2CF777190025BD85 /* Data Models */,
-				0097E7392CF776F30025BD85 /* Login Screen */,
-				0097E7382CF776D80025BD85 /* Profile Screen */,
-				0097E7372CF776AD0025BD85 /* Do A Workout Screen */,
 				0097E7352CF7765E0025BD85 /* Create New Workout Screen */,
 				0097E7342CF7760C0025BD85 /* Main Screen */,
 				31556EB42CF5257A007346EB /* GoogleService-Info.plist */,
@@ -170,6 +148,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				570B955C2CFE478D00D134B0 /* Login Screen */,
+				570B955D2CFE479B00D134B0 /* Register Screen */,
 			);
 			name = "Final Project Group 21";
 			packageProductDependencies = (
@@ -238,6 +220,7 @@
 				314F59D92CE2A31300D54B4F /* ViewController.swift in Sources */,
 				314F59D52CE2A31300D54B4F /* AppDelegate.swift in Sources */,
 				314F59D72CE2A31300D54B4F /* SceneDelegate.swift in Sources */,
+				570B956B2CFE506500D134B0 /* User.swift in Sources */,
 				003D80532CFA6ADB0030DFFF /* AddWorkoutView.swift in Sources */,
 				008EA3372CF8F88E00B18BEA /* Workout.swift in Sources */,
 				003D80572CFA6D510030DFFF /* Exercise.swift in Sources */,
