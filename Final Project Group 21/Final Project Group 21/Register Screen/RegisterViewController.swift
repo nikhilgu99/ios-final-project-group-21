@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupActions()
-        setupTapGestureToDismissKeyboard() // Retain tap-to-dismiss behavior
+        setupTapGestureToDismissKeyboard()
     }
 
     // MARK: - Setup Actions
@@ -56,7 +56,27 @@ class RegisterViewController: UIViewController {
         let password = registerView.passwordTextField.text ?? ""
         let username = registerView.usernameTextField.text ?? ""
 
-        // Register user in Firebase Authentication
+        // Check for duplicate username in Firestore
+        database.collection("users").whereField("username", isEqualTo: username).getDocuments { [weak self] querySnapshot, error in
+            guard let self = self else { return }
+
+            if let error = error {
+                self.showAlert(message: "Error checking username: \(error.localizedDescription)")
+                return
+            }
+
+            if let documents = querySnapshot?.documents, !documents.isEmpty {
+                // Username already exists
+                self.showAlert(message: "Username is already taken. Please choose another one.")
+                return
+            }
+
+            // Proceed with user registration
+            self.registerUser(email: email, password: password, username: username)
+        }
+    }
+
+    private func registerUser(email: String, password: String, username: String) {
         Auth.auth().createUser(withEmail: email, password: password) { [weak self] authResult, error in
             guard let self = self else { return }
 
@@ -116,7 +136,16 @@ class RegisterViewController: UIViewController {
         if registerView.confirmPasswordTextField.text != registerView.passwordTextField.text {
             return "Passwords do not match."
         }
+        if !isValidEmail(registerView.emailTextField.text ?? "") {
+            return "Please enter a valid email address."
+        }
         return nil
+    }
+
+    private func isValidEmail(_ email: String) -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
     }
 
     // MARK: - Navigation

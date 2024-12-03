@@ -16,6 +16,7 @@ class LoginScreenViewController: UIViewController {
         let view = LoginScreenView()
         return view
     }()
+    private let database = Firestore.firestore() // Initialize Firestore
 
     // MARK: - Lifecycle
     override func loadView() {
@@ -25,7 +26,7 @@ class LoginScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupActions()
-        setupTapGestureToDismissKeyboard() // Only retain tap-to-dismiss
+        setupTapGestureToDismissKeyboard()
     }
 
     // MARK: - Setup Actions
@@ -50,13 +51,21 @@ class LoginScreenViewController: UIViewController {
             return
         }
 
-        let username = loginView.usernameTextField.text ?? ""
-        let password = loginView.passwordTextField.text ?? ""
+        let username = loginView.usernameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines).lowercased() ?? ""
+        let password = loginView.passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+
+        // Show loading indicator
+        let loadingIndicator = UIActivityIndicatorView(style: .large)
+        loadingIndicator.center = view.center
+        loadingIndicator.startAnimating()
+        view.addSubview(loadingIndicator)
 
         // Query Firestore for the email associated with the username
-        let db = Firestore.firestore()
-        db.collection("users").whereField("username", isEqualTo: username).limit(to: 1).getDocuments { [weak self] (querySnapshot, error) in
+        database.collection("users").whereField("username", isEqualTo: username).limit(to: 1).getDocuments { [weak self] (querySnapshot, error) in
             guard let self = self else { return }
+
+            // Remove loading indicator
+            loadingIndicator.removeFromSuperview()
 
             if let error = error {
                 self.showAlert(message: "Login failed: \(error.localizedDescription)")
@@ -65,7 +74,7 @@ class LoginScreenViewController: UIViewController {
 
             guard let documents = querySnapshot?.documents, !documents.isEmpty,
                   let email = documents.first?.data()["email"] as? String else {
-                self.showAlert(message: "Username not found.")
+                self.showAlert(message: "No account found with this username.")
                 return
             }
 
@@ -95,10 +104,13 @@ class LoginScreenViewController: UIViewController {
 
     // MARK: - Input Validation
     private func validateInput() -> String? {
-        if loginView.usernameTextField.text?.isEmpty ?? true {
+        let username = loginView.usernameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+        let password = loginView.passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
+
+        if username.isEmpty {
             return "Please enter your username."
         }
-        if loginView.passwordTextField.text?.isEmpty ?? true {
+        if password.isEmpty {
             return "Please enter your password."
         }
         return nil
