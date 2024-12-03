@@ -52,6 +52,7 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		570B955C2CFE478D00D134B0 /* Login Screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Login Screen"; sourceTree = "<group>"; };
 		570B955D2CFE479B00D134B0 /* Register Screen */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Register Screen"; sourceTree = "<group>"; };
+		570B956C2CFE784A00D134B0 /* Profile */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Profile; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +118,7 @@
 		314F59D32CE2A31300D54B4F /* Final Project Group 21 */ = {
 			isa = PBXGroup;
 			children = (
+				570B956C2CFE784A00D134B0 /* Profile */,
 				570B955D2CFE479B00D134B0 /* Register Screen */,
 				570B955C2CFE478D00D134B0 /* Login Screen */,
 				0097E73A2CF777190025BD85 /* Data Models */,
@@ -152,6 +154,7 @@
 			fileSystemSynchronizedGroups = (
 				570B955C2CFE478D00D134B0 /* Login Screen */,
 				570B955D2CFE479B00D134B0 /* Register Screen */,
+				570B956C2CFE784A00D134B0 /* Profile */,
 			);
 			name = "Final Project Group 21";
 			packageProductDependencies = (
