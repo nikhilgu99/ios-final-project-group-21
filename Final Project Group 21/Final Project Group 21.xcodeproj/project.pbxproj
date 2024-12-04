@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,13 @@
 		314F59DE2CE2A31500D54B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314F59DD2CE2A31500D54B4F /* Assets.xcassets */; };
 		314F59E12CE2A31500D54B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314F59DF2CE2A31500D54B4F /* LaunchScreen.storyboard */; };
 		31556EB52CF5257A007346EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31556EB42CF5257A007346EB /* GoogleService-Info.plist */; };
+		315A9F0A2D00010400C6FF9C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A9F092D00010400C6FF9C /* User.swift */; };
+		315A9F0D2D0001A000C6FF9C /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A9F0C2D0001A000C6FF9C /* LoginScreenView.swift */; };
+		315A9F122D00029E00C6FF9C /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A9F112D00029E00C6FF9C /* LoginScreenViewController.swift */; };
+		315A9F152D0002E100C6FF9C /* RegisterScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A9F142D0002E100C6FF9C /* RegisterScreenView.swift */; };
+		315A9F182D00032B00C6FF9C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A9F172D00032B00C6FF9C /* RegisterViewController.swift */; };
+		315A9F1C2D00065600C6FF9C /* ProfileScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A9F1B2D00065600C6FF9C /* ProfileScreenView.swift */; };
+		315A9F222D0006C000C6FF9C /* ProfileScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315A9F212D0006C000C6FF9C /* ProfileScreenViewController.swift */; };
 		31AD25CF2CF51FDA009F5371 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25CE2CF51FDA009F5371 /* FirebaseAuth */; };
 		31AD25D12CF51FDA009F5371 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25D02CF51FDA009F5371 /* FirebaseFirestore */; };
 		31AD25D32CF51FDA009F5371 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25D22CF51FDA009F5371 /* FirebaseFirestoreSwift */; };
@@ -45,6 +52,13 @@
 		314F59E02CE2A31500D54B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		314F59E22CE2A31500D54B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31556EB42CF5257A007346EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		315A9F092D00010400C6FF9C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		315A9F0C2D0001A000C6FF9C /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreenView.swift; path = "Final Project Group 21/Login Screen/LoginScreenView.swift"; sourceTree = SOURCE_ROOT; };
+		315A9F112D00029E00C6FF9C /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
+		315A9F142D0002E100C6FF9C /* RegisterScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreenView.swift; sourceTree = "<group>"; };
+		315A9F172D00032B00C6FF9C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		315A9F1B2D00065600C6FF9C /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileScreenView.swift; path = "Final Project Group 21/Profile Screen/ProfileScreenView.swift"; sourceTree = SOURCE_ROOT; };
+		315A9F212D0006C000C6FF9C /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +112,8 @@
 		0097E7382CF776D80025BD85 /* Profile Screen */ = {
 			isa = PBXGroup;
 			children = (
+				315A9F1B2D00065600C6FF9C /* ProfileScreenView.swift */,
+				315A9F212D0006C000C6FF9C /* ProfileScreenViewController.swift */,
 			);
 			path = "Profile Screen";
 			sourceTree = "<group>";
@@ -105,6 +121,8 @@
 		0097E7392CF776F30025BD85 /* Login Screen */ = {
 			isa = PBXGroup;
 			children = (
+				315A9F0C2D0001A000C6FF9C /* LoginScreenView.swift */,
+				315A9F112D00029E00C6FF9C /* LoginScreenViewController.swift */,
 			);
 			path = "Login Screen";
 			sourceTree = "<group>";
@@ -114,6 +132,7 @@
 			children = (
 				008EA3362CF8F88E00B18BEA /* Workout.swift */,
 				003D80562CFA6D510030DFFF /* Exercise.swift */,
+				315A9F092D00010400C6FF9C /* User.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -152,8 +171,18 @@
 				314F59DF2CE2A31500D54B4F /* LaunchScreen.storyboard */,
 				314F59E22CE2A31500D54B4F /* Info.plist */,
 				008EA33A2CF8FA2900B18BEA /* Configs.swift */,
+				315A9F1A2D00038000C6FF9C /* Register Screen */,
 			);
 			path = "Final Project Group 21";
+			sourceTree = "<group>";
+		};
+		315A9F1A2D00038000C6FF9C /* Register Screen */ = {
+			isa = PBXGroup;
+			children = (
+				315A9F142D0002E100C6FF9C /* RegisterScreenView.swift */,
+				315A9F172D00032B00C6FF9C /* RegisterViewController.swift */,
+			);
+			path = "Register Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,15 +266,22 @@
 			files = (
 				314F59D92CE2A31300D54B4F /* ViewController.swift in Sources */,
 				314F59D52CE2A31300D54B4F /* AppDelegate.swift in Sources */,
+				315A9F222D0006C000C6FF9C /* ProfileScreenViewController.swift in Sources */,
 				314F59D72CE2A31300D54B4F /* SceneDelegate.swift in Sources */,
 				003D80532CFA6ADB0030DFFF /* AddWorkoutView.swift in Sources */,
 				008EA3372CF8F88E00B18BEA /* Workout.swift in Sources */,
 				003D80572CFA6D510030DFFF /* Exercise.swift in Sources */,
 				0097E73C2CF777990025BD85 /* MainScreenView.swift in Sources */,
 				003D805A2CFA6FD50030DFFF /* ExercisesTableViewCell.swift in Sources */,
+				315A9F122D00029E00C6FF9C /* LoginScreenViewController.swift in Sources */,
+				315A9F0D2D0001A000C6FF9C /* LoginScreenView.swift in Sources */,
+				315A9F0A2D00010400C6FF9C /* User.swift in Sources */,
+				315A9F182D00032B00C6FF9C /* RegisterViewController.swift in Sources */,
 				008EA33B2CF8FA2900B18BEA /* Configs.swift in Sources */,
 				003D80552CFA6AE70030DFFF /* AddWorkoutViewController.swift in Sources */,
 				008EA33D2CF8FB1E00B18BEA /* WorkoutsTableViewCell.swift in Sources */,
+				315A9F152D0002E100C6FF9C /* RegisterScreenView.swift in Sources */,
+				315A9F1C2D00065600C6FF9C /* ProfileScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

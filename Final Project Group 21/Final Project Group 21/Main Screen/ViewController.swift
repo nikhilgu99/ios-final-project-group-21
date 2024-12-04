@@ -39,6 +39,8 @@ class ViewController: UIViewController {
     
     @objc func onButtonProfileTapped() {
         //todo launch profile screen from here
+        let profileVC = ProfileScreenViewController()
+        navigationController?.pushViewController(profileVC, animated: true)
     }
     
     @objc func onButtonAddWorkoutTapped() {
