@@ -8,6 +8,9 @@
 import UIKit
 
 class AddExerciseViewController: UIViewController {
+    
+    // Delegate to contactListController when getting back
+    var delegate:AddWorkoutViewController!
 
     let addExerciseScreen = AddExerciseView()
     
@@ -45,7 +48,8 @@ class AddExerciseViewController: UIViewController {
           }
         
         let exercise = Exercise(name: name, sets: sets, reps: reps, rest: rest)
-        print(exercise)
+        delegate.delegateOnAddExercise(exercise: exercise)
+        navigationController?.popViewController(animated: true)
     }
     
     //Error alert

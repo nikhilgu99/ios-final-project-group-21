@@ -41,7 +41,14 @@ class AddWorkoutViewController: UIViewController {
     
     @objc func onButtonAddExerciseTapped() {
         let addExerciseVC = AddExerciseViewController()
+        addExerciseVC.delegate = self
         navigationController?.pushViewController(addExerciseVC, animated: true)
+    }
+    
+    // Add the contact to the list
+    func delegateOnAddExercise(exercise:Exercise) {
+        exercisesList.append(exercise)
+        addWorkoutScreen.tableViewExercises.reloadData()
     }
     
 }
