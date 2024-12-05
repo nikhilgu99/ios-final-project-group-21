@@ -31,10 +31,17 @@ class AddWorkoutViewController: UIViewController {
         let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboardOnTap))
         tapRecognizer.cancelsTouchesInView = false
         view.addGestureRecognizer(tapRecognizer)
+        
+        addWorkoutScreen.buttonAddExercise.addTarget(self, action: #selector(onButtonAddExerciseTapped), for: .touchUpInside)
     }
     
     @objc func hideKeyboardOnTap() {
         view.endEditing(true)
+    }
+    
+    @objc func onButtonAddExerciseTapped() {
+        let addExerciseVC = AddExerciseViewController()
+        navigationController?.pushViewController(addExerciseVC, animated: true)
     }
     
 }

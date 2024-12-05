@@ -32,6 +32,8 @@
 		31AD25CF2CF51FDA009F5371 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25CE2CF51FDA009F5371 /* FirebaseAuth */; };
 		31AD25D12CF51FDA009F5371 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25D02CF51FDA009F5371 /* FirebaseFirestore */; };
 		31AD25D32CF51FDA009F5371 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 31AD25D22CF51FDA009F5371 /* FirebaseFirestoreSwift */; };
+		31AD31632D01423500476974 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD31622D01423500476974 /* AddExerciseViewController.swift */; };
+		31AD31682D01426D00476974 /* AddExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD31672D01426D00476974 /* AddExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		315A9F172D00032B00C6FF9C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		315A9F1B2D00065600C6FF9C /* ProfileScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileScreenView.swift; path = "Final Project Group 21/Profile Screen/ProfileScreenView.swift"; sourceTree = SOURCE_ROOT; };
 		315A9F212D0006C000C6FF9C /* ProfileScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreenViewController.swift; sourceTree = "<group>"; };
+		31AD31622D01423500476974 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddExerciseViewController.swift; path = "Final Project Group 21/Add Exercise Screen/AddExerciseViewController.swift"; sourceTree = SOURCE_ROOT; };
+		31AD31672D01426D00476974 /* AddExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 		003D80582CFA6D630030DFFF /* Add Exercise Screen */ = {
 			isa = PBXGroup;
 			children = (
+				31AD31622D01423500476974 /* AddExerciseViewController.swift */,
+				31AD31672D01426D00476974 /* AddExerciseView.swift */,
 			);
 			path = "Add Exercise Screen";
 			sourceTree = "<group>";
@@ -269,8 +275,10 @@
 				315A9F222D0006C000C6FF9C /* ProfileScreenViewController.swift in Sources */,
 				314F59D72CE2A31300D54B4F /* SceneDelegate.swift in Sources */,
 				003D80532CFA6ADB0030DFFF /* AddWorkoutView.swift in Sources */,
+				31AD31632D01423500476974 /* AddExerciseViewController.swift in Sources */,
 				008EA3372CF8F88E00B18BEA /* Workout.swift in Sources */,
 				003D80572CFA6D510030DFFF /* Exercise.swift in Sources */,
+				31AD31682D01426D00476974 /* AddExerciseView.swift in Sources */,
 				0097E73C2CF777990025BD85 /* MainScreenView.swift in Sources */,
 				003D805A2CFA6FD50030DFFF /* ExercisesTableViewCell.swift in Sources */,
 				315A9F122D00029E00C6FF9C /* LoginScreenViewController.swift in Sources */,
