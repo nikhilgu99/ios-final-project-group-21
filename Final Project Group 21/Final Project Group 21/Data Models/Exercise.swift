@@ -6,10 +6,10 @@
 //
 
 import Foundation
-
+import FirebaseFirestore
 
 struct Exercise: Codable {
-    
+    //@DocumentID var id: String?
     var name: String
     var sets: Int
     var reps: Int
