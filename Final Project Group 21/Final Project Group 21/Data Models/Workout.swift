@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 struct Workout: Codable {
-    
+    //@DocumentID var id: String?
     var name: String
     var exerciseInterval: Int
     var exercises: [Exercise]

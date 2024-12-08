@@ -20,6 +20,13 @@ class ProfileScreenViewController: UIViewController {
         super.viewDidLoad()
         title = "Profile"
         profileView.buttonSignOut.addTarget(self, action: #selector(onSignOutTapped), for: .touchUpInside)
+        
+        // Fetch the account details and display them
+        let userName = Auth.auth().currentUser?.displayName ?? "Name:"
+        let userEmail = Auth.auth().currentUser?.email ?? "Email:"
+        
+        profileView.labelName.text = "Name: " + userName
+        profileView.labelEmail.text = "Email: " + userEmail
     }
 
     @objc func onSignOutTapped() {
